@@ -1,0 +1,37 @@
+body{background-image:url(images/IMG_6430.JPG);
+    background-repeat:repeat-x;
+}
+h1{background-color;
+    display:inline-block;
+        margin:1rem 0;
+        vertical-align: text-bottom;
+}
+button{background-color:orange
+}
+button:hover{background-color:aqua
+}
+
+body{background-color:rgb(6, 6, 56);
+    color: rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
+    margin:1rem 0;
+    padding:1rem;
+}
+header a{color : rgb(66, 211, 221);      
+}
+header{text-align:center;
+    background-color: rgb(25, 64, 100);
+    padding:1rem;
+}     
+main{padding:1rem;
+    max-width:60rem;
+    margin:1rem auto;
+    background-color: rgba(25, 64, 100, 0.471);
+}
+.home-content div{display:inline-block;
+            width:60%;
+}
+.home-content img{vertical-align: top;
+            width:38%;
+}
+
