@@ -3,7 +3,7 @@ body{margin:0;
     color:#fff;
     background-color:rgb(64,73,61);
 }
-header{background-image:url(images/IMG_6430G.JP);
+header{background-image:url(/Users/CullenErie/Documents/GitHub/hansontm-uwec-cs-318/trees.png);
       background-size:cover;
       background-repeat:no-repeat;
       background-position:center;
@@ -34,9 +34,8 @@ main{padding:1rem;
 }
 main img{max-width:100%;
         margin:.5rem 0;
-        (download image)
 }
-.about-me h2{background-size:(add image);
+.about-me h2{background-image:(/Users/CullenErie/Documents/GitHub/hansontm-uwec-cs-318/Lab07/me.jpeg);
             background-size:cover;
             padding:10rem 0 10rem 4rem;
             text-shadow:2px 2px 2px #0000008f;
@@ -70,6 +69,10 @@ main img{max-width:100%;
     }
     .gallery img{width:32%;
                 margin:.5rem;
+    }
+}
+@media (min-width:1500px) {
+    .gallery{max-height:120rem;
     }
 }
 @media (min-width:2300px) {
