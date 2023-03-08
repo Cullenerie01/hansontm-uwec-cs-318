@@ -1,7 +1,5 @@
 body{background-color:white;
-  font-weight: 200;/*Delete this*/
-  /*missing margin:0;*/
-  padding:1rem;/*Delete this*/
+  margin:0; /*missing margin:0;*/
   font-family: 'Times New Roman', Times, serif
 }
 header{background-color: #275218;
