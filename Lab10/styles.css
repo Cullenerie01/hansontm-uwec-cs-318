@@ -1,0 +1,156 @@
+body{background-color:rgb(17, 73, 6);
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+header a{color : rgb(255, 255, 255);
+    justify-content:center;     
+}
+header{text-align:center;
+    justify-content: space-between;
+        align-items:flex-end;
+    background-color: rgb(255, 255, 255);
+    padding:2rem;
+    background-image:url(images/gg-house.jpeg);
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:center;
+}
+footer{text-align: center;
+    padding: 2%;
+}
+footer ul{list-style: none;}
+main{padding:1rem
+}
+li{margin-bottom: 1%}
+.home-content div{display:inline-block;
+            width:60%;
+}
+.home-content img{vertical-align: top;
+            width:38%;
+}
+img{max-width:100%;
+}
+.menu{display:flex;
+    flex-wrap:wrap;
+    color:black;
+    background-color: #717161;
+    padding: 1%;
+}
+.menu div{width:48%;
+    background-color:#717161;
+    padding: 1%;
+}
+.h2{background-color: #717161;}
+.menu h2{flex-basis:100%;
+    text-align: center;
+}
+.creatures{width:29%
+}
+.gallery h2{background-color:rgb(245,245,245);
+    color:rgb(15,15,46);
+    padding:2rem 4rem;
+}
+nav>a{background-color:rgb(17, 73, 6);
+   border: .12px solid rgb(245, 245, 245);
+    color:rgb(245, 245, 245);
+    text-decoration:none;
+    padding:0.5rem 2rem;
+    display:inline-block;
+    margin:1rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+/* Place the "forward button" to the right */
+.forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  /*when the user hovers,add a black background with some little opacity */
+  .Back:hover, .forward:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption Info */
+  .Info {
+    color: #e3e3e3;
+    font-size: 16px;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  /* Worknumbering (1/3 etc) */
+.MessageInfo {
+    color: #f2f2f3;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The circles or bullets and indicators */
+  .dots {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: #acc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+  }
+  
+  .enable, .dots:hover {
+    background-color: #717161;
+  }
+  /* Faint animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  
