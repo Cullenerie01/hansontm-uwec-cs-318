@@ -35,9 +35,6 @@ form{background-color: rgba(0,0,0, .9);
     width:50rem;
     max-width: calc(90% - 4rem);
     margin: 1rem auto;
-    action="https://theresahanson.com/monster-creator"
-    method="post"
-    enctype="multipart/form-data"
 }
 input[type=text], [type=email], [type=date], [type=tel], [type=color]{
     font-size:1.25rem;
