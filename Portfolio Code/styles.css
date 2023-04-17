@@ -1,0 +1,34 @@
+nav{background-color:aqua;
+   padding: 1rem;
+   font-family:'Times New Roman', Times, serif;
+   font-size: large;
+   text-align:center;
+   display:flex;
+   justify-content: space-evenly;
+}
+.experience{display:flex;
+    flex-wrap:wrap;
+    color:black;
+    padding: 1%;
+    justify-content:space-evenly;
+}
+.experience>div{
+    width:48%;
+}
+.contact{text-align:center;
+        background-color: aqua;
+        padding: 0.5rem;
+}
+body{background-color: rgb(247, 238, 226);
+}
+header{background-color: white;
+}
+.about{display:flex;
+    padding:2%;
+    gap:15rem;
+}
+.about>div{max-width:40rem;}
+.gallery{background-color:rgb(245,245,245);
+    color:rgb(15,15,46);
+    padding:2rem 4rem;
+}
