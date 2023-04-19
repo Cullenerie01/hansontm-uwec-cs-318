@@ -2,6 +2,7 @@ body{padding:5rem;
     background-color: darkolivegreen;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/*Delete the white text on the next line*/
 th class="Aliases" class="Smeagol"{background-color:darkgreen;
     color: white;
 }
@@ -9,6 +10,7 @@ tr:nth-child(even){background-color: #ffffe2;
 }
 tr:nth-child(odd){background-color: #e0e0cb;
 }
+/*Delete the white text on the next line*/
 td, th class="title"{padding: .5rem;
 }
 .title{font-size: 2rem;
