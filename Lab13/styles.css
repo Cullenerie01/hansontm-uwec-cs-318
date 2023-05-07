@@ -19,10 +19,9 @@ nav>a{color: #fcfbfc;
         padding: .5rem 1rem;
 }
 .sidenav>a{background-color: #fae2c0;
-            color: #0f0f0f;
-            padding: .5rem 1rem;
-            display: inline-block;
-            margin: .5rem .5rem 0 0;
+    color: #0f0f0f;
+    padding: .5rem 1rem;
+    display: inline-block;
 }
 main{padding: 1rem;
 }
@@ -42,10 +41,11 @@ header{display:flex;
     display: flex;
     justify-content: flex-end;
 }
-.sidenav>a{display:block;
-        text-align: right;
-        display: block;
-        text-align: right;
+.sidenav>a{
+    display:block;
+    text-align: right;
+    display: block;
+    text-align: right;
 }
 }
 nav>a{transition-property: opacity;
@@ -54,27 +54,25 @@ nav>a{transition-property: opacity;
 }
 nav>a:hover{opacity: .7;
 }
-.sidenav>a{margin: 1rem 2rem;
-            position: relative;
+.sidenav>a{
+    margin: 1rem 2rem;
+    position: relative;
 }
-.sidenav>a:before, .sidenav>a:after{position:absolute;
-                                    width: 1.7rem;
-                                    height: 2.5rem;
-                                    top: -.6rem;
+.sidenav>a:before, .sidenav>a:after{
+    position:absolute;
+    width: 1.7rem;
+    height: 2.5rem;
+    top: -.6rem;
 }
-.sidenav>a:before{content: images/scroll-left.svg;
-                left: -1.6rem;
+.sidenav>a:before{
+    /*with content you need url(image/path) around the file name*/
+    content: images/scroll-left.svg;
+    left: -1.6rem;
 }
-.sidenav>a:after{content: images/scroll-right.svg;
-                right: -1.6rem;
-}
-.sidenav>a{margin: 2rem;
-        left: -10rem;
-}
-.sidenav>a:hover{left: 0;
-                opacity: .7;
-}
-.sidenav>a{transition: opacity .2s ease-in-out, left .5s ease-in-out;
+.sidenav>a:after{
+    /*with content you need url(image/path) around the file name*/
+    content: images/scroll-right.svg;
+    right: -1.6rem;
 }
 section{padding-left: 5rem;
         position: relative;
@@ -86,3 +84,15 @@ section:before{position:absolute;
             right: 0;
 }
 #odin:before{content: url(images/odin.svg)}
+/*You need to download the images I sent in an email to your images folder of all the icons. Then make the same css on 96 for each id. So thor, loki, etc...*/
+
+/*The following css should be in your media query.*/
+.sidenav>a{
+    margin: 2rem;
+    left: -10rem;
+}
+.sidenav>a:hover{left: 0;
+    opacity: .7;
+}
+.sidenav>a{transition: opacity .2s ease-in-out, left .5s ease-in-out;
+}
