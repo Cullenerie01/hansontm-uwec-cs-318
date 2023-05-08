@@ -23,6 +23,12 @@ body{background-color:rgb(9, 2, 29);
 }
 .rover{bottom: 10.5rem;
     left: 10%;
+    animation: rover 5s ease-in-out infinite alternate;
+}
+@keyframes rover{ from{ left: 10%;
+}
+                to{left: 90%;}
+
 }
 .rover:after{animation-name:rotate;
             content:url(images/dish.svg);
@@ -42,7 +48,8 @@ body{background-color:rgb(9, 2, 29);
     from{ bottom: 0%;
         transform: rotate(0) scale(1);}
     to{bottom: 75%;
-        transform: rotate(180deg)  scale(2);}
+        transform: rotate(180deg)  scale(2);
+}
 }
 .planet{animation-fill-mode:forwards;
         left: 30%;
