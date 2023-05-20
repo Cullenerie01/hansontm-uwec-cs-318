@@ -23,8 +23,13 @@ img{max-width: 100%;
     padding: .90000rem;
 }
 .container{position: relative;
-            width: 100px;
-            }
+            width: 100px;/*Delete this width. It is making the apparel space really narrow.*/
+}
+/*Add display:flex; and flex-wrap:wrap; to the row class. This will allow the apparel items to line up left to right 4 across on desktop and wrap on mobile*/
+.row{
+    display: flex;
+    flex-wrap:wrap;
+}
 header{background-image: url("images/Header.svg");
     display: flex;
     justify-content: space-evenly;
@@ -53,9 +58,11 @@ nav>a{color:black;
 
 .homescreen{ height: 63rem; z-index: 1000;
 }
- .homescreen { position: under; left: 0; top: 0;
+ .homescreen { position: under; /*Delete this position. It isn't valid*/
+    left: 0; 
+    top: 0;
 }
-  .text {z-index: 100;
+.text {z-index: 100;
     position: absolute;
     color: white;
     font-size: 24px;
@@ -81,9 +88,10 @@ footer{background-color: tan;
 .rax-team{width: 20rem;
         padding-right: 15rem;
         float: right;
-        padding: left: 5rem;
+        padding: left: 5rem;/*This should be padding-left*/
         padding-top: 4rem;
-    }
+}
+/*The padding and properties on the p here are also being applied to the p's on the apparel page. Which is making a huge space on mobile. I recommend scoping it so only the p on the about page gets these styles. If you add the class about to the about page, then add ".about p" in front of the p for the selector instead of just p. That will fix the issue*/ 
 p{padding-left: 10rem;
     padding-top: 3rem;
     padding-right: 6rem;
@@ -99,15 +107,21 @@ main{padding-bottom: 10rem;
 }
 h1{padding-top:3rem;
 }
-.cart-images{width:10rem;
+.cart-images{
+    width:10rem;
     padding-left: 10rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    /*add display:inline-block; here*/
+    display: inline-block;
 }
-.cart-content{width: 20rem;
+.cart-content{
+    /*add display:inline-block; here*/
+    display: inline-block;
+    width: 20rem;
     padding-right: 15rem;
-    float: right;
-    padding: left: 5rem;
+    float: right;/*Delete this. You don't need it with display:inline-block;*/
+    padding: left: 5rem;/*The property should be padding-left:*/
     padding-top: 4rem;
     color: black;
 }
@@ -121,18 +135,18 @@ h1{padding-top:3rem;
     margin: 2rem;}
 
 .column{flex-basis: 25%;
-            padding: 10px;
-            min-width: 200px;
-            margin-bottom:50px;
-            transition: 0.5s;
-            float: left;
-            width: 33.33%;
-            }
+        padding: 10px;
+        min-width: 200px;
+        margin-bottom:50px;
+        transition: 0.5s;
+        float: left;
+        width: 33.33%;
+}
 .rating{color:yellow;
 }
 .row-content{padding: 5rem;}
 
-@media all and (max-width:100px){
+@media (max-width:600px){
     .nav{ height: 0.5rem;
         margin: .25rem;
     }
@@ -156,10 +170,10 @@ h1{padding-top:3rem;
     }
     .logo{width: 100px;
         padding: .90000rem;
-        position: center;
+        position: center;/*position:center; isn't valid just delete it. It isn't doing anything*/ 
     }
     .container{position: relative;
-                width: 100px;
+                width: 100px;/*Delete this. It is making the apparel container too small*/
                 }
     header{background-image: url("images/Header.svg");
         display: flex;
@@ -189,7 +203,7 @@ h1{padding-top:3rem;
     
     .homescreen{ height: 30rem; z-index: 1000;
     }
-     .homescreen { position: under; left: 0; top: 0;
+     .homescreen { position: under; /*Delete position under: it is not valid*/left: 0; top: 0;
     }
       .text {z-index: 100;
         position: absolute;
@@ -202,7 +216,8 @@ h1{padding-top:3rem;
     h1{text-align: center;
     }
     .carousel{width: 73rem;
-        padding: 5rem;
+        /*Add a max-width of 90% here. The width of 73rem is too big for mobile sizes, so it is creating a horizontal scroll bar*/
+        padding: 5rem;/*Change this padding to 1rem*/
         font-family:Arial, Helvetica, sans-serif;
     }
     .images-container{ display:flex;
@@ -217,9 +232,10 @@ h1{padding-top:3rem;
     .rax-team{width: 20rem;
             padding-right: 15rem;
             float: right;
-            padding: left: 5rem;
+            padding: left: 5rem;/*This should be padding-left*/
             padding-top: 4rem;
         }
+        /*Delete this p declaration, it is redundant with the css outside the media query*/
     p{padding-left: 10rem;
         padding-top: 3rem;
         padding-right: 6rem;
@@ -235,15 +251,17 @@ h1{padding-top:3rem;
     }
     h1{padding-top:3rem;
     }
-    .cart-images{width:10rem;
+    .cart-images{width:10rem;/*change width here to 100%*/
+        /*Change padding on mobile to be 1rem maybe 2. More than that would be too big*/
         padding-left: 10rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
-    .cart-content{width: 20rem;
+    .cart-content{width: 20rem;/*change width here to 100%*/
+        /*Change padding on mobile to be 1rem maybe 2. More than that would be too big*/
         padding-right: 15rem;
-        float: right;
-        padding: left: 5rem;
+        float: right;/*Delete this*?
+        padding: left: 5rem;/*should be padding-left*/
         padding-top: 4rem;
         color: black;
     }
@@ -260,9 +278,6 @@ h1{padding-top:3rem;
                 padding: 10px;
                 min-width: 200px;
                 margin-bottom:50px;
-                transition: 0.5s;
-                float: left;
-                width: 33.33%;
                 }
     .rating{color:yellow;
     }
