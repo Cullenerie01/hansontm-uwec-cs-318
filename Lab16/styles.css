@@ -26,3 +26,5 @@ header nav a{display: block;
             padding: 3rem;
             border: 1px solid #5bc0b4;
 }
+.header{background-image: url(src="images/Header.svg");
+}

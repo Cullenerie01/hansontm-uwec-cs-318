@@ -1,0 +1,270 @@
+.nav{ height: 2rem;
+    margin: .25rem;
+}
+img{max-width: 100%;
+}
+.social img{height: 5rem;
+            margin: .5rem;
+}
+.cart img{height: 5rem;
+    margin: .5rem;
+}
+.search img{height: 5rem;
+    margin: .5rem;
+    vertical-align: middle;
+}
+.hamburger{width: 40px;
+        padding: .5rem;
+}
+.hamburger hr{margin: .75rem 0;
+            border: 2px solid black;
+}
+.logo{width: 200px;
+    padding: .90000rem;
+}
+.container{position: relative;
+            width: 100px;
+            }
+header{background-image: url("images/Header.svg");
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav{flex-basis:100%;
+    background-color: tan;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color:black;
+    justify-content:space-between;
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav>a{color:black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;}
+
+.main-page{size: 60rem;
+}
+
+
+.homescreen{ height: 63rem; z-index: 1000;
+}
+ .homescreen { position: under; left: 0; top: 0;
+}
+  .text {z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    left: 600px;
+    top: 600px;
+}
+h1{text-align: center;
+}
+.carousel{width: 73rem;
+    padding: 5rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.images-container{ display:flex;
+                gap: 80px;
+                overflow-x: scroll;
+}
+footer{background-color: tan;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+.rax-team{width: 20rem;
+        padding-right: 15rem;
+        float: right;
+        padding: left: 5rem;
+        padding-top: 4rem;
+    }
+p{padding-left: 10rem;
+    padding-top: 3rem;
+    padding-right: 6rem;
+    padding-bottom: 10rem;
+    font-size:x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bino-t-shirt{width: 40rem;
+    padding-top: 7rem;
+    padding-left: 4rem;
+}
+main{padding-bottom: 10rem;
+}
+h1{padding-top:3rem;
+}
+.cart-images{width:10rem;
+    padding-left: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.cart-content{width: 20rem;
+    padding-right: 15rem;
+    float: right;
+    padding: left: 5rem;
+    padding-top: 4rem;
+    color: black;
+}
+.form{color:black;
+    font-size:large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5rem;
+}
+
+.column img{height: 10rem;
+    margin: 2rem;}
+
+.column{flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom:50px;
+            transition: 0.5s;
+            float: left;
+            width: 33.33%;
+            }
+.rating{color:yellow;
+}
+.row-content{padding: 5rem;}
+
+@media all and (max-width:100px){
+    .nav{ height: 0.5rem;
+        margin: .25rem;
+    }
+    img{max-width: 100%;
+    }
+    .social img{height: 3rem;
+                margin: .5rem;
+    }
+    .cart img{height: 5rem;
+        margin: .5rem;
+    }
+    .search img{height: 5rem;
+        margin: .5rem;
+        vertical-align: middle;
+    }
+    .hamburger{width: 40px;
+            padding: .5rem;
+    }
+    .hamburger hr{margin: .75rem 0;
+                border: 2px solid black;
+    }
+    .logo{width: 100px;
+        padding: .90000rem;
+        position: center;
+    }
+    .container{position: relative;
+                width: 100px;
+                }
+    header{background-image: url("images/Header.svg");
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    nav{flex-basis:100%;
+        background-color: tan;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color:black;
+        justify-content:space-between;
+        display: flex;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    nav>a{color:black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;}
+    
+    .main-page{size: 60rem;
+    }
+    
+    
+    .homescreen{ height: 30rem; z-index: 1000;
+    }
+     .homescreen { position: under; left: 0; top: 0;
+    }
+      .text {z-index: 100;
+        position: absolute;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        left: 600px;
+        top: 600px;
+    }
+    h1{text-align: center;
+    }
+    .carousel{width: 73rem;
+        padding: 5rem;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .images-container{ display:flex;
+                    gap: 80px;
+                    overflow-x: scroll;
+    }
+    footer{background-color: tan;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    .rax-team{width: 20rem;
+            padding-right: 15rem;
+            float: right;
+            padding: left: 5rem;
+            padding-top: 4rem;
+        }
+    p{padding-left: 10rem;
+        padding-top: 3rem;
+        padding-right: 6rem;
+        padding-bottom: 10rem;
+        font-size:x-large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .bino-t-shirt{width: 40rem;
+        padding-top: 7rem;
+        padding-left: 4rem;
+    }
+    main{padding-bottom: 10rem;
+    }
+    h1{padding-top:3rem;
+    }
+    .cart-images{width:10rem;
+        padding-left: 10rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .cart-content{width: 20rem;
+        padding-right: 15rem;
+        float: right;
+        padding: left: 5rem;
+        padding-top: 4rem;
+        color: black;
+    }
+    .form{color:black;
+        font-size:large;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 5rem;
+    }
+    
+    .column img{height: 10rem;
+        margin: 2rem;}
+    
+    .column{flex-basis: 25%;
+                padding: 10px;
+                min-width: 200px;
+                margin-bottom:50px;
+                transition: 0.5s;
+                float: left;
+                width: 33.33%;
+                }
+    .rating{color:yellow;
+    }
+    .row-content{padding: 5rem;}
+}
