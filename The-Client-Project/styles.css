@@ -260,7 +260,7 @@ h1{padding-top:3rem;
     .cart-content{width: 20rem;/*change width here to 100%*/
         /*Change padding on mobile to be 1rem maybe 2. More than that would be too big*/
         padding-right: 15rem;
-        float: right;/*Delete this*?
+        float: right;/*Delete this*/
         padding: left: 5rem;/*should be padding-left*/
         padding-top: 4rem;
         color: black;
